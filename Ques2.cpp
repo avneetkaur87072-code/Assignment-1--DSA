@@ -17,7 +17,7 @@ int main(){
     for(int i=0; i<n; i++){
     	bool isduplicate = false;
     	for(int j=0; j<idx; j++){
-    		if(arr[i] == arr[idx]){
+    		if(arr[i] == arr[j]){
     			isduplicate = true;
     			break;
 			}
@@ -37,3 +37,4 @@ int main(){
 	
 	return 0;
 }
+
