@@ -1,13 +1,12 @@
 #include <iostream>
 using namespace std;
 
-#define MAX 100 
 
 // Function to create the array
 void createArray(int arr[], int &n) {
     cout << "Enter number of elements: ";
     cin >> n;
-    if (n > MAX) {
+    if (n > 10) {
         cout << "Size exceeds maximum limit!" << endl;
         n = 0;
         return;
@@ -33,7 +32,7 @@ void displayArray(int arr[], int n) {
 
 // Function to insert element at a given position
 void insertElement(int arr[], int &n) {
-    if (n >= MAX) {
+    if (n >= 10) {
         cout << "Array is full! we cannot insert." << endl;
         return;
     }
@@ -96,7 +95,7 @@ void linearSearch(int arr[], int n) {
 }
 
 int main() {
-    int arr[MAX], n = 0;
+    int arr[10], n = 0;
     
     
     createArray(arr, n);
@@ -107,4 +106,5 @@ int main() {
    
     return 0;
 }
+
 
